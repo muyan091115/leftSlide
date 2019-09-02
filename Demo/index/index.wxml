@@ -1,0 +1,11 @@
+<view class="touch-item1 {{item.isTouchMove ? 'touch-move-active1' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+
+  <view class='content1' bindtap='showDetail' data-index="{{index}}">
+    <view class="cellContent1">
+    </view>
+  </view>
+
+  <view class="del1" catchtap="edit" data-index="{{index}}">编辑</view>
+  <view class="del1 del2" catchtap="del" data-index="{{index}}">删除</view>
+
+</view>
